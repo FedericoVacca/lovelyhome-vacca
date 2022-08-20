@@ -1,0 +1,13 @@
+.btn-carrito {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+}
+
+.btn-carrito:hover {
+    background: #fd1c4200;
+    border: 1px solid #ffbdc800;
+}

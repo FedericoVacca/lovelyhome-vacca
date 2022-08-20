@@ -11,6 +11,7 @@
     --textColor: #00000;
 }
 
+
 .navbar{
     display: flex;
     align-items: center;
@@ -23,6 +24,7 @@
 
 nav a{
     margin: 0 2rem;
+    
     color: var(--textColor);
     text-decoration: none;
 }
@@ -41,6 +43,22 @@ nav a:hover{
     visibility: hidden;
     opacity: 0;
     font-size: 1.8rem;
+}
+
+
+
+
+
+.iconos {
+    font-size: 1.5rem;
+    padding-right: 20px;
+    color:rgb(255, 225, 238);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.iconos:hover {
+    color:white;
 }
 
 @media only screen and (max-width: 1024px){

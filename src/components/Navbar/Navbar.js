@@ -1,6 +1,9 @@
-import {  useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import './Navbar.css';
+import {  useRef } from "react";
+import { FaTimes, FaBars } from "react-icons/fa";
+import CartWidget from "../CartWidget/CartWidget";
+
+
 
 
 
@@ -24,6 +27,10 @@ function Navbar () {
             <button className="nav-btn" onClick={mostrarNavbar}>
                 <FaBars/>
             </button>
+            <div>
+                <CartWidget/>
+            </div>
+            
         </div>
     )
 }
