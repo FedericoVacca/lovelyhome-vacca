@@ -1,0 +1,10 @@
+.grid-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+h1, h2 {
+    color: #41a1a3;
+    text-align: center;
+}
