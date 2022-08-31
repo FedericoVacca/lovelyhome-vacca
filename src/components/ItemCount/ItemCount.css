@@ -1,11 +1,10 @@
-.container{
+/*.container{
     background-color: #b3f0f1;
-    margin-left: 45rem;
-    margin-right: 30rem;
+    margin-left: 5rem;
+    margin-right: rem;
     padding: 3rem;
     border-radius: 10px;
-}
-
+}*/
 
 .contar {
     align-items: center;
@@ -16,11 +15,13 @@
 }
 
 .elementos {
-    padding: 20px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-agregar{
-    height: 70px;
+    height: 100px;
     width: 200px;
     font-size: 25px;
     font-weight: bold;

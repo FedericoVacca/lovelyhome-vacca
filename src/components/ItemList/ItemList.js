@@ -13,7 +13,7 @@ const ItemList = () => {
             setLoading(false)
         })
     }, [])
-  return (
+    return (
     <>
         <h1> Lovely Home </h1>
 
@@ -30,7 +30,7 @@ const ItemList = () => {
 
     }
     </>
-  )
+    )
 }
 
 export default ItemList

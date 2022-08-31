@@ -7,21 +7,21 @@ const arrayProductos = [
         id: 1,
         title : 'Farol',
         price : 1500,
-        description:'Farol decorativo, confeccionado en metal y vidrio, brinda un estilo industrial y calido a su hogar.',
+        description:'Farol decorativo, confeccionado en metal y vidrio.',
         pictureUrl : [imagenFarol]    
     },
     {
         id : 2,
         title : 'Portavela',
         price : 800,
-        description:'',
+        description:'Portavela en vidrio y metal.',
         pictureUrl : [imagenPortavela]
     },
     {
         id : 3,
         title : 'Florero',
         price : 3000,
-        description:'',
+        description:'Set de floreros para exterior.',
         pictureUrl : [imagenFlorero]
     },
 ]

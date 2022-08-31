@@ -10,7 +10,7 @@ const [loading, setLoading] = useState(true)
 useEffect(()=> {
     getFetch
     .then(response => {
-        setData(response.find(prod => prod.id === 1))
+        setData(response.find(prod => prod.id === 2))
         setLoading(false)
     })
 }, [])
@@ -23,12 +23,16 @@ console.log(data)
             loading ?  <h2>Cargando...</h2>
             :
             <div className="item-detail">
-                    <img src={data.pictureUrl} alt="" />
-                    <h2>{data.name}</h2>
-                    <h3>${data.price}</h3>
-                    <p>{data.description}</p>
-                    <ItemCount/>
-                </div>
+                    <div className="img_detail">
+                        <img className="img_product" src={data.pictureUrl} alt="" />
+                    </div>
+                    <div className='text'>
+                        <h2>{data.name}</h2>
+                        <h3>${data.price}</h3>
+                        <p>{data.description}</p>
+                    </div>
+                        <ItemCount/>
+                    </div>
         }
     </div>
   )
