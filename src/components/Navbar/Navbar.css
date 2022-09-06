@@ -11,6 +11,9 @@
     --textColor: #00000;
 }
 
+.nav-brand{
+    width: 120px;
+}
 
 .navbar{
     display: flex;

@@ -1,41 +1,30 @@
-import {useState,useEffect} from 'react'
-import getFetch from '../../data/data.js';
 import ItemCount from '../ItemCount/ItemCount';
-import './ItemDetail.css'
+import './ItemDetail.css';
 
-const ItemDetail = () => {
-const [data, setData] = useState({})
-const [loading, setLoading] = useState(true)
 
-useEffect(()=> {
-    getFetch
-    .then(response => {
-        setData(response.find(prod => prod.id === 2))
-        setLoading(false)
-    })
-}, [])
-
-console.log(data)
-        return (
+const ItemDetail = (product) => {
+/*const { name, price, pictureUrl, description,id } = product;*/    
+    
+    
+    return (
             <div className="item-container">
             <h1>Detalle del Producto</h1>
         {
-            loading ?  <h2>Cargando...</h2>
-            :
+            
             <div className="item-detail">
                     <div className="img_detail">
-                        <img className="img_product" src={data.pictureUrl} alt="" />
+                        <img className="img_product" src={product.pictureUrl} alt={product.name}/>
                     </div>
                     <div className='text'>
-                        <h2>{data.name}</h2>
-                        <h3>${data.price}</h3>
-                        <p>{data.description}</p>
+                        <h2>{product.name}</h2>
+                        <h3>${product.price}</h3>
+                        <p>{product.description}</p>
                     </div>
                         <ItemCount/>
                     </div>
         }
     </div>
-  )
+)
 }
 
-export default ItemDetail
+export default ItemDetail;

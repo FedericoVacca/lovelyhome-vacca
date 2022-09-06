@@ -1,18 +1,21 @@
 
-import React from 'react'
-import './Item.css'
+import { Link } from "react-router-dom";
+import React from 'react';
+import './Item.css';
 
-const Item = ({data}) => {
+const Item = ({product}) => {
     return (
-        <div>
-            <div className="product" key={data.title}>
-                    <img src={data.pictureUrl} alt="" />
-                    <h1>{data.title}</h1>
-                    <h2>${data.price}</h2>
-                    <button className='btn-agregar'>Agregar al Carrito</button>
+        <div className="listPro">
+            <div className="product" key={product.title}>
+                    <img src={product.pictureUrl} alt={product.title}/>
+                    <h1>{product.title}</h1>
+                    <h2>${product.price}</h2>
+                    <Link to={`/products/${product.id}`}>
+                        <button className='btn-agregar'>Ver detalle</button>
+                    </Link>
             </div>
         </div>
     )
 }
 
-export default Item
+export default Item;

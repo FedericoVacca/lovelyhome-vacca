@@ -1,7 +1,9 @@
 import './Navbar.css';
+import logo from "../../assets/logo.png";
 import {  useRef } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
 import CartWidget from "../CartWidget/CartWidget";
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,12 +16,15 @@ function Navbar () {
     }
     return (
         <div className="navbar">
-            <h3>Lovely Home</h3>
+            <Link to="/">
+                <div>
+                    <img className="nav-brand" src={logo} alt="logo"/>
+                </div> </Link>
             <nav ref={navRef}>
-                <a href="#">Home</a>
-                <a href="#">Interior</a>
-                <a href="#">Exterior</a>
-                <a href="#">Deco</a>
+                <Link to="/">Home</Link>
+                <Link to="/category/interior">Interior</Link>
+                <Link to="/category/exterior">Exterior</Link>
+                <Link to="/category/deco">Deco</Link>
                 <button className="nav-btn nav-close-btn" onClick={mostrarNavbar}>
                     <FaTimes/>
                 </button>

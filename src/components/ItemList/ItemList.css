@@ -1,7 +1,5 @@
-.grid-product {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+.contenedor_cartas {
+    display: flex;
 }
 
 h1, h2 {

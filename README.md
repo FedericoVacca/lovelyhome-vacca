@@ -1,3 +1,7 @@
+Proyecto React Comisión 41590
+CoderHouse
+Profe: Fredy Alexander Chaparro Castro
+Tienda e-Commerce para Lovely Home deco.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
