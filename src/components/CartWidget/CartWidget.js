@@ -1,11 +1,15 @@
 import './CartWidget.css';
 import { FaCartPlus } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function CartWidget (){
 return (
-    <div className='btn-carrito'> 
+    <Link to="/cart">
+      <div className='btn-carrito'> 
         <FaCartPlus/>
-    </div>
+      </div>
+    </Link>
+    
   )
 }
 

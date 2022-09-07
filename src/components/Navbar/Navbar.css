@@ -27,13 +27,12 @@
 
 nav a{
     margin: 0 2rem;
-    
-    color: var(--textColor);
+    color: var(--secondaryColor);
     text-decoration: none;
 }
 
 nav a:hover{
-    color: var(--secondaryColor);
+    color: var(--textColor);
 }
 
 .nav-btn {
