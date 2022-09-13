@@ -5,9 +5,27 @@
     border: none;
     outline: none;
     font-size: 1.8rem;
+    text-decoration: none;
+    display: flex;
 }
 
 .btn-carrito:hover {
     background: #fd1c4200;
     border: 1px solid #ffbdc800;
+}
+
+.div_principal {
+    display: block;
+    margin-top: 10px;
+}
+
+.number {
+    color:#fff;
+    background-color: #ff0048;
+    width: 28px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-bottom: 9px;
+    text-align: center;
+    text-decoration: none;
 }

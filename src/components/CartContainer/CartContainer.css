@@ -1,0 +1,112 @@
+.contenedor_cartas {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 10px;
+}
+
+.card_cart {
+    display: flex;
+    width: 90%;
+    border-radius: 10px;
+    border:#41a1a3 solid 1.4px;
+    background-color: rgba(255, 255, 255, 0.653);
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 10px;
+    align-items: justify;
+    text-align: justify;
+}
+
+.text_card {
+    color:#000000;
+    text-decoration: none;
+    width: 100%;
+    text-align: justify;
+    font-size: 20px;
+    padding: 0px;
+    transition: all 0.5s;
+    padding-bottom: 15px;
+}
+
+.text_card:hover {
+    color: #41a1a3;
+}
+
+.text2 {
+    display: flex;
+    padding-right: 10px;
+    padding-top: 3px;
+}
+
+.button_cart {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: #000000;
+    border:#41a1a3 2px solid;
+    background-color: #41a1a3;
+    border-radius: 5px;
+    padding: 6px;
+    width: 200px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button_cart:hover {
+    background-color: #93f6f8;
+    border: #93f6f8 2px solid;
+    color: #000000;
+    letter-spacing: 2px;
+}
+
+.button_compra {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: #000000;
+    border:#41a1a3 2px solid;
+    background-color: #41a1a3;
+    border-radius: 5px;
+    padding: 6px;
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button_compra:hover {
+    background-color: #93f6f8;
+    border: #93f6f8 2px solid;
+    color: #000000;
+    letter-spacing: 2px;
+}
+
+
+.greeting {
+    font-family: serif;
+    font-size: 40px;
+}
+
+.greeting_container {
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.greeting_noItem {
+    margin-left: 30rem;
+    font-family: serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color:#000000;
+    transition: all 0.5s;
+}
+
+.greeting_noItem:hover {
+    color: #41a1a3;
+}
