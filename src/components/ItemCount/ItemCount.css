@@ -56,6 +56,21 @@
     margin-right: 20px;
 }
 
+.buttonDisabled {
+    height: 40px;
+    width: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #93f6f8;
+    border:#93f6f8 2px solid;
+    background-color:rgba(230, 217, 217, 0.829);
+    border-radius: 5px;
+    transition: all 0.5s;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
 .btn-stock:hover {
     color: #000000;
     border:#93f6f8 2px solid;

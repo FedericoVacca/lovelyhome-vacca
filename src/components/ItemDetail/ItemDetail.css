@@ -29,7 +29,7 @@
     width: 100%;
     text-align: center;
     font-size: 25px;
-    padding: 0px;
+    padding: 23px;
 }
 
 
@@ -52,4 +52,32 @@ h2{
     justify-content: center;
     align-items: center;
     color:#41a1a3;
+}
+
+.link_tostify {
+    text-decoration: none;
+    color:rgb(120, 120, 120)
+}
+
+.button_detalle {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: #000000;
+    border:#41a1a3 2px solid;
+    background-color: #41a1a3;
+    border-radius: 5px;
+    padding: 6px;
+    width: 200px;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.button_detalle:hover {
+    color: #000000;
+    border:#93f6f8 2px solid;
+    background-color: #ffffff;
 }
