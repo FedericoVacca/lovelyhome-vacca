@@ -1,9 +1,9 @@
 import React from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useState, useEffect } from "react";
-import { arrayProductos } from "../../data/data";
 import { useParams  } from "react-router-dom";
-
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../../utils/firebase";
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState({});
@@ -12,10 +12,15 @@ const ItemDetailContainer = () => {
     console.log({ id });
     
     useEffect(() =>{
-        const producto = arrayProductos.find((item) => item.id == id);
-        setItem(producto);
+        const queryDoc = doc(db, "items", id)
+        getDoc(queryDoc).then(resp=>{
+            const newDoc = {
+                ...resp.data(),
+                id:resp.id
+            }
+            setItem(newDoc);
+        })
     }, [id]);
-
     console.log({ item });
     
         return (
