@@ -19,20 +19,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height:75px;
     padding: 0 2rem;
-    background-color: var(--mainColor);
+    background: linear-gradient(to right, #41a1a3, #93f6f8);
     color: var(--textColor);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.507);
+}
+nav {
+    margin-left: auto;
 }
 
 nav a{
-    margin: 0 2rem;
-    color: var(--secondaryColor);
+    margin: 0 1rem;
+    margin-left: 5rem;
+    color: var(--textColor);
     text-decoration: none;
 }
 
 nav a:hover{
-    color: var(--textColor);
+    color: var(--secondaryColor);
 }
 
 .nav-btn {
@@ -46,9 +51,6 @@ nav a:hover{
     opacity: 0;
     font-size: 1.8rem;
 }
-
-
-
 
 
 .iconos {

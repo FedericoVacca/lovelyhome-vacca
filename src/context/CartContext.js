@@ -4,47 +4,50 @@ export const CartContext = createContext()
 
 export const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState([])
-
-    const addProduct = (productToAdd) => {
-        if(!isInCart(productToAdd.id)) {
-            setCart([...cart, productToAdd])
-        } else {
-            const cartUpdated = cart.map(prod => {
-                if(prod.id === productToAdd.id) {
-                    const productUpdated = {
-                        ...prod,
-                        quantity: productToAdd.quantity
+    
+    const addProduct = (product) => {
+        const isInCart = cart.some(item => item.id === product.id);
+        if (isInCart === true) {
+            const copyArray = cart.map((item) => {
+                if (item.id === product.id) {
+                    return {
+                        ...item,
+                        quantity: item.quantity + product.quantity,
                     }
-                    return productUpdated
-                } else {
-                    return prod
+                }
+                else {
+                    return item
                 }
             })
-
-            setCart(cartUpdated)
+            setCart(copyArray)
+        }
+        else {
+            setCart([...cart, product])
         }
     }
 
     const getQuantity = () => cart.reduce((total, prod) => (total += prod.quantity), 0);
 
+
     const isInCart = (id) => {
-        return cart.some(prod => prod.id === id)
-    }
+    const elementExist = cart.some((elemento)=>elemento.id === id);
+    return elementExist;
+};
 
     const removeProduct = (id) => {
         const newCart = cart.filter(prod => prod.id !== id)
         setCart(newCart)
-    }
+    };
 
     const clearCart = () => {
         setCart([])
-    }
+    };
 
     const getProductQuantity = (id) => {
         const productById = cart.find(prod => prod.id === id)
 
         return productById?.quantity
-    }
+    };
 
     const getTotal = () => cart.reduce((total, prod) => (total += prod.quantity * prod.price), 0);
 
@@ -53,5 +56,4 @@ export const CartContextProvider = ({ children }) => {
             {children}
         </CartContext.Provider> 
     )
-}
-
+};
