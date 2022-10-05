@@ -1,7 +1,64 @@
-Proyecto React Comisión 41590
-CoderHouse
-Profe: Fredy Alexander Chaparro Castro
-Tienda e-Commerce para Lovely Home deco.
+# Proyecto final, curso de REACT JS en CODERHOUSE.
+## Profe: Fredy Alexander Chaparro Castro
+---
+## Lovely Home Deco
+---
+Es un simulador de un Ecommerce de articulos de decoracion de interior y exterior.
+
+La idea general de esta aplicación es crear un Sistema de E-Commerce para compra de productos con filtrado por categorías usando información de un JSON propio llamado asyncMock, el cual contendrá cada producto y así lograr que a partir de esta poder lograr más cosas como:
+
+- Filtrar u ordenar los productos según su categoría
+
+- Interactuar con cada producto y ver los detalles de este
+
+- Agregar la cantidad de productos deseados al carrito de compras
+
+- Ver los productos agregados en la ruta /cart con su respectiva cantidad
+
+- Eliminar los productos del carrito de compras
+
+- Finalizar la compra y obtener el ID de esta
+
+
+
+## Que se utilizo hasta el momento para llegar al resultado de la Pre Entrega?
+---
+- Create-React-App
+- React-router-dom
+- Vercel
+- Firebase
+- toastify (Para generar alertas con un mejor estilo)
+
+## Que se construyo?
+---
+En el proyecto encontraras las categorías de los productos representados en la barra de navegación para así hacer un filtrado propio de los productos según su categoría usando las rutas "/category/:categoria".
+
+Después se encuentra el componente ItemListContainer, donde están guardados las cartas de los productos, creadas de forma dinámica atreves de los componentes ItemList y Item, en estas encontraras el botón de "ver detalles", el cual de dirigirá hacia la ruta "/Products/:id" donde encontraras los detalles del producto seleccionado y cuenta con un componente ItemCount, el cual se encarga de contar la cantidad de elementos que quieres agregar a tu carrito de compras, además de que si el producto no cuenta con stock disponible se mostrara un cartel indicándolo.
+
+Luego de agregar los productos aparecerá el de carrito de compras con la cantidad de productos que este contenga, al darle click a este icono te dirigirá a la ruta "/cart" donde encontraras los elementos de tu lista y la opción de eliminar un producto, eliminar todos o finalizar tu compra.
+
+Al darle al botón de finalizar tu compra, te guiara a la ruta "/orderdata" donde podrás encontrar un formulario donde debes de poner tu nombre, email y teléfono, para así finalmente presionar en el botón "Generar Orden" y enviar la información a la base de datos de Firebase, finalizando con una alerta de Toastify la cual mostrara el ID de tu compra.
+
+
+# Vistas
+---
+## Vista del Home
+![N|Solid](https://firebasestorage.googleapis.com/v0/b/lovelyhome-ecommerce.appspot.com/o/Home.jpg?alt=media&token=25e14fd3-007c-4287-a377-01211db5464a)
+## Vista del item detail
+![N|Solid](https://firebasestorage.googleapis.com/v0/b/lovelyhome-ecommerce.appspot.com/o/itemdetail.jpg?alt=media&token=43ffcd87-d82c-4b67-916e-32b8aab79a03)
+## Vista del Home filtrado segun la categoria elegida
+![N|Solid](https://firebasestorage.googleapis.com/v0/b/lovelyhome-ecommerce.appspot.com/o/filtrado.jpg?alt=media&token=c6fc3b61-4b48-455f-afb8-8a6991d40e7a)
+## Vista del carrito de compras
+![N|Solid](https://firebasestorage.googleapis.com/v0/b/lovelyhome-ecommerce.appspot.com/o/cart.jpg?alt=media&token=937c7380-f7ee-4f86-baa4-3780ef08ba89)
+## Vista del formulario para finalizar tu compra
+![N|Solid](https://firebasestorage.googleapis.com/v0/b/lovelyhome-ecommerce.appspot.com/o/order.jpg?alt=media&token=c2fbbb75-5e52-45d1-90ab-f4b3e3ce381c)
+## Flow de la App
+![N|Solid](https://firebasestorage.googleapis.com/v0/b/lovelyhome-ecommerce.appspot.com/o/Dise%C3%B1o%20sin%20t%C3%ADtulo.gif?alt=media&token=f724afa7-9524-4934-b7ae-4b5628de872f)
+
+
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
