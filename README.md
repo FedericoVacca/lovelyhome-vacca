@@ -53,7 +53,7 @@ Al darle al botón de finalizar tu compra, te guiara a la ruta "/orderdata" dond
 ## Vista del formulario para finalizar tu compra
 ![N|Solid](https://firebasestorage.googleapis.com/v0/b/lovelyhome-ecommerce.appspot.com/o/order.jpg?alt=media&token=c2fbbb75-5e52-45d1-90ab-f4b3e3ce381c)
 ## Flow de la App
-![N|Solid](https://firebasestorage.googleapis.com/v0/b/lovelyhome-ecommerce.appspot.com/o/Dise%C3%B1o%20sin%20t%C3%ADtulo.gif?alt=media&token=f724afa7-9524-4934-b7ae-4b5628de872f)
+![](https://firebasestorage.googleapis.com/v0/b/lovelyhome-ecommerce.appspot.com/o/Dise%C3%B1o%20sin%20t%C3%ADtulo.gif?alt=media&token=f724afa7-9524-4934-b7ae-4b5628de872f)
 
 
 
