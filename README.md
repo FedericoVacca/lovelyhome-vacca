@@ -21,7 +21,7 @@ La idea general de esta aplicación es crear un Sistema de E-Commerce para compr
 
 
 
-## Que se utilizo hasta el momento para llegar al resultado de la Pre Entrega?
+## Que se utilizo hasta el momento para llegar al resultado de la Entrega?
 ---
 - Create-React-App
 - React-router-dom
